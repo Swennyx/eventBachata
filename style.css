@@ -118,3 +118,12 @@ button {
 button:hover {
     background-color: #4cae4c;
 }
+
+#btn-create {
+    width: 15%;
+}
+#create {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
