@@ -19,17 +19,28 @@
     </div>
     <div class="form-container">
         <h2>Créer un événement</h2>
-        <form action="#" method="post" enctype="multipart/form-data">
+        <form id="event-form" method="post" enctype="multipart/form-data">
             <!-- Photo -->
             <div class="form-group">
                 <label for="photo">Sélectionner une photo</label>
                 <input type="file" id="photo" name="photo" accept="image/*" required>
             </div>
 
+             <!-- Titre -->
+             <div class="form-group">
+                <label for="title">Titre de l'événement</label>
+                <input type="name" id="title" name="title" placeholder="Nom de l'événement" required>
+            </div>
+
+             <!-- Titre -->
+             <div class="form-group">
+                <label for="organisateur">Organisateur</label>
+                <input type="name" id="organizer" name="organizer" placeholder="Nom de l'organisateur" required>
+            </div>
             <!-- Ville -->
             <div class="form-group">
-                <label for="ville1">Ville de départ</label>
-                <input type="text" id="ville1" name="ville1" placeholder="Entrez la ville de départ" required>
+                <label for="city">Localisation</label>
+                <input type="text" id="city" name="city" placeholder="Lieu de l'event" required>
             </div>
 
             <!-- Date -->
@@ -38,11 +49,6 @@
                 <input type="date" id="date" name="date" required>
             </div>
 
-            <!-- Ville de destination -->
-            <div class="form-group">
-                <label for="ville2">Ville de destination</label>
-                <input type="text" id="ville2" name="ville2" placeholder="Entrez la ville de destination" required>
-            </div>
             <!-- description -->
             <div class="form-group">
                 <label for="description">Description de l'événement</label>

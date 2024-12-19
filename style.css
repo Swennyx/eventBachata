@@ -6,6 +6,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: aliceblue;
+    overflow-x: hidden;
 }
 h1 {
     width: 100%;
@@ -88,10 +89,9 @@ label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
 }
 
-input[type="text"], input[type="date"], input[type="file"], textarea {
+input[type="text"], input[type="date"], input[type="file"],input[type="name"], textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
@@ -99,7 +99,9 @@ input[type="text"], input[type="date"], input[type="file"], textarea {
     box-sizing: border-box;
     font-size: 16px;
 }
-
+#card-content,p ,h3 ,h5 {
+    margin: 5px;
+}
 
 
 button {

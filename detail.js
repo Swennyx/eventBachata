@@ -14,7 +14,7 @@ fetch("http://localhost:3000/event")
 .then(data => {
     let users = data
     console.log(users)
-    const user = users.find(user => user.id === parseInt(id))
+    const user = users.find(user => user.id == parseInt(id))
     console.log(user)
     detailContainer.innerHTML += `
        <div class="card-Detail">
@@ -23,11 +23,12 @@ fetch("http://localhost:3000/event")
         </div>
         <div class="card-content">
             <h2 class="title">${user.title}</h2>
-            <p class="dates">Dates : ${user.dates}</p>
-            <p class="location">Localisation : ${user.location.city}</p>
-            <p class="availability">Places disponibles : ${user.available_spots}</p>
+            <h5 class="dates">Dates : ${user.dates}</h5>
+            <h5 class="location">Localisation : ${user.location.city}</h5>
+            <h3 class="organisateur">Organisateur : ${user.organizer}</h3>
+            <p class="descriptionDetail">Description : ${user.description}</p>
             <p class="prix">Prix : ${user.price} €</p>
-            <p class="descriptionDetail">Description : ${user.description}
+            <p class="availability">Places disponibles : ${user.available_spots}</p>
         </div>
         </div>
         `
