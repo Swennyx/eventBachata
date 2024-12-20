@@ -7,6 +7,7 @@ const id = params.get("id");
 console.log(id);
 
 let detailContainer = document.getElementById("detail");
+
 // ---------Fetch pour afficher les détails sur la page---------
 fetch("http://localhost:3000/event")
   .then((response) => response.json())
@@ -34,7 +35,6 @@ fetch("http://localhost:3000/event")
     let availabilityElement = detailContainer.querySelector(
       ".card-content .availability"
     );
-
     if (user.available_spots > 0) {
       availabilityElement.style.color = "green";
       availabilityElement.textContent = "Place disponible";
@@ -47,7 +47,6 @@ fetch("http://localhost:3000/event")
 
 // -----------Btn Delete -------------
 const btnDelete = document.getElementById("btn-delete");
-
 btnDelete
   .addEventListener("click", () => {
     if (!id) {

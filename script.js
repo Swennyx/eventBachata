@@ -74,3 +74,20 @@ fetch("http://localhost:3000/event")
     });
   })
   .catch((err) => console.log(err));
+fetch("http://localhost:3000/event")
+  .then((res) => res.json())
+  .then((data) => {
+    data.forEach((element) => {
+      let marker = L.marker([
+        element.location.latitude,
+        element.location.longitude,
+      ]).addTo(map);
+      marker.bindPopup(`
+             <a href="detail.html?id=${element.id}">
+            <img src="${element.photo}" alt="Image de l'événement" style="object-fit: cover;width: 100%;">
+            </a>
+            <p>${element.title}</p>
+        `);
+    });
+  })
+  .catch((err) => console.error(err));

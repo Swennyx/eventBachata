@@ -90,6 +90,24 @@
       "price": 50,
       "description": "Gourmet dinner followed by a live Bachata dance show.",
       "organizer": "Bachata Toulouse"
+    },
+    {
+      "id": "6",
+      "photo": "Bachata visuel.png",
+      "dates": [
+        "2024-12-20"
+      ],
+      "title": "Swenny et Mélanie Bachata Crew",
+      "location": {
+        "city": "la rochelle",
+        "country": "France",
+        "latitude": 46.159732,
+        "longitude": -1.1515951
+      },
+      "available_spots": true,
+      "price": 50,
+      "description": "Bachata Crew Festival",
+      "organizer": "Organisateur de l'événement"
     }
   ]
 }
