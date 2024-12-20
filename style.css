@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    overflow-x: hidden;
+}
+h1 {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+}
+a {
+    text-decoration: none;
+}
+#map {
+    height: 400px;
+    margin: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.571);
+    border-radius: 5px;
+}
+.main {
+    display: flex;
+}
+#event {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de se déplacer à la ligne suivante si nécessaire */
+    justify-content: space-between; /* Espacement égal entre les cartes */
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+}
+.card-Detail {
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.dates, .location, .availability {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* formulaire css */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], input[type="file"],input[type="name"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+#card-content,p ,h3 ,h5 {
+    margin: 5px;
+}
+
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#btn-create {
+    width: 15%;
+}
+#div-delete {
+    margin: 15px;
+    display: flex;
+    
+}
+.btn-delete {
+    background-color: #dc3545;
+    width: 15%;
+    margin: auto;
+}
+.btn-delete:hover {
+    background-color: #b92e3c;
+}
+#create {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
